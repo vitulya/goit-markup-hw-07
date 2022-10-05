@@ -1,0 +1,12 @@
+.modal-send-btn {
+    display: block;
+    margin: auto;
+    padding: 10px 52px;
+
+    transition: background-color var(--transition-dur-and-fun);
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: var(--background-button-active);
+}

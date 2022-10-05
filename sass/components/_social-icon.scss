@@ -1,0 +1,19 @@
+.social-icon-list {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color var(--transition-dur-and-fun);
+}
+
+.social-icon-link:hover {
+    background-color: var(--accent-color);
+}
