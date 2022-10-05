@@ -3,26 +3,27 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    &-list-mapa {
+        color: var(--primery-white-color);
+        display: inline-block;
+        margin-bottom: 0;
+    }
 }
 
-
-.adress-list-mapa {
-    color: var(--primery-white-color);
-    display: inline-block;
-    margin-bottom: 0;
-}
 
 .adress-list-link {
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .adress-list-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.adress-list-link:hover,
-.adress-list-link:focus {
-    color: var(--accent-color);
-}

@@ -3,12 +3,13 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.main-footer-logo {
-    color: var(--primery-white-color);
-    display: inline-block;
-    margin-bottom: 20px;
+    &-logo {
+        color: var(--primery-white-color);
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
 }
 
 .footer-container {

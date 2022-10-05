@@ -12,20 +12,22 @@
     cursor: pointer;
 
     transition: border var(--transition-dur-and-fun);
+
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+
+    .clients-icon {
+        transition: fill var(--transition-dur-and-fun);
+    }
 }
 
-.clients-item:hover {
-    border: 1px solid var(--accent-color);
-}
 
 .clients-icon {
-    fill: var(--accent-grey-icon)
+    fill: var(--accent-grey-icon);
+
+    .clients-item:hover & {
+            fill: var(--accent-color);
+        }
 }
 
-.clients-item .clients-icon {
-    transition: fill var(--transition-dur-and-fun);
-}
-
-.clients-item:hover .clients-icon {
-    fill: var(--accent-color);
-}
