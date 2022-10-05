@@ -4,9 +4,9 @@
     padding: 10px 52px;
 
     transition: background-color var(--transition-dur-and-fun);
-}
 
-.modal-send-btn:hover,
-.modal-send-btn:focus {
-    background-color: var(--background-button-active);
+    &:hover,
+    &:focus {
+        background-color: var(--background-button-active);
+    }
 }

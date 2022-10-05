@@ -11,14 +11,17 @@
     padding: 0;
     width: 30px;
     height: 30px;
+
+
 }
 
 .modal-close-icon {
     fill: var(--primery-black-color);
 
     transition: fill var(--transition-dur-and-fun);
+
+    .modal-close-button:hover & {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-close-button:hover .modal-close-icon {
-    fill: var(--accent-color);
-}

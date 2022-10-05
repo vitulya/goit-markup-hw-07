@@ -13,27 +13,26 @@
     border-radius: 4px;
 
     transition: border var(--transition-dur-and-fun);
-}
 
-.modal-textarea:hover {
-    outline: none;
-    border: 1px solid var(--accent-color);
+    &:hover {
+        outline: none;
+        border: 1px solid var(--accent-color);
 
-    cursor: pointer;
-}
+        cursor: pointer;
+    }
 
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
 
-.modal-textarea:focus {
-    outline: none;
-    border: 1px solid var(--accent-color);
+        cursor: text;
+    }
 
-    cursor: text;
-}
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
 
-.modal-textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
+        color: rgba(117, 117, 117, 0.5);
+    }
 }

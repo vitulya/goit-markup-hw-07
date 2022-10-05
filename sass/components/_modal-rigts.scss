@@ -33,15 +33,18 @@
     fill: var(--primery-white-color);
 }
 
-.modal-checkbox:checked+.modal-svg .modal-svg-icon {
-    display: block;
+.modal-checkbox:checked + .modal-svg {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+
+    
+    .modal-svg-icon {
+            display: block;
+        }
 }
 
-.modal-checkbox:checked+.modal-svg {
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color)
-}
 
 .modal-checkbox:focus+.modal-svg {
     outline: 1px solid var(--accent-color);
 }
+

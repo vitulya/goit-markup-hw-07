@@ -10,20 +10,20 @@
     padding-left: 42px;
 
     transition: border var(--transition-dur-and-fun);
-}
 
-.modal-input:hover {
-    outline: none;
-    border: 1px solid var(--accent-color);
+    &:hover{
+        outline: none;
+        border: 1px solid var(--accent-color);
+        
+        cursor: pointer;
+    }
 
-    cursor: pointer;
-}
-
-.modal-input:focus {
-    outline: none;
-    border: 1px solid var(--accent-color);
-
-    cursor: text;
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
+    
+        cursor: text;
+    }
 }
 
 .modal-icon {
@@ -35,8 +35,8 @@
     transform: translateY(-50%);
 
     transition: fill var(--transition-dur-and-fun);
-}
 
-.modal-input:focus+.modal-icon {
-    fill: var(--accent-color);
+    .modal-input:focus + & {
+            fill: var(--accent-color);
+        }
 }

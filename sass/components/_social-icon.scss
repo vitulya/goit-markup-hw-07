@@ -11,8 +11,10 @@
     border-radius: 50%;
 
     transition: background-color var(--transition-dur-and-fun);
-}
 
-.social-icon-link:hover {
-    background-color: var(--accent-color);
+    &:hover {
+        background-color: var(--accent-color);
+    }
+
+
 }
