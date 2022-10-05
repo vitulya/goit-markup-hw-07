@@ -21,9 +21,7 @@
 .features__wrapper {
     height: 120px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %display;
 
     background-color: var(--backgrounh-secondary-color);
     border-radius: 4px;

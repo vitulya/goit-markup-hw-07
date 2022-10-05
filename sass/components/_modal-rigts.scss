@@ -1,8 +1,8 @@
 .modal-rigts {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    @extend %display;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
