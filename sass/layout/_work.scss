@@ -1,21 +1,21 @@
-.section-work {
+.work__section {
     padding-top: 47px;
     background-color: var(--primery-white-color);
 }
 
-.work {
+.work__list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
 
-.work-example {
+.work__item {
     position: relative;
 
     flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.work-example-title {
+.work__title {
     position: absolute;
     bottom: 0;
     width: 100%;
