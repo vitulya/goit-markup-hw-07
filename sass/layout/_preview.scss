@@ -3,11 +3,11 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
+}
 
-    &-thumb {
-            position: relative;
-            overflow: hidden;
-        }
+.preview-thumb {
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -23,21 +23,19 @@
     transition: transform var(--transition-dur-and-fun);
 
     padding: 63px 24px;
-
-    .preview-item:hover &,
-    .preview-item:focus & {
-        transform: translateY(0%);
-    }
-
-    &-discription {
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.03em;
-    
-        color: var(--primery-white-color);
-    }
 }
 
+.preview-item:hover .preview-overlay,
+.preview-item:focus .preview-overlay {
+    transform: translateY(0%);
+}
+
+.preview-overlay-discription {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+}
 
 .preview-item {
     background-color: var(--primery-white-color);
@@ -52,30 +50,31 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &-link {
-        display: inline-block;
-    }
+}
 
-    &-content {
-        border: 1px solid var(--ramka-color);
-        border-top: none;
+.preview-item-link {
+    display: inline-block;
+}
 
-        padding: 20px 24px;
-    }
+.preview-item-content {
+    border: 1px solid var(--ramka-color);
+    border-top: none;
 
-    &-title {
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: var(--primery-grey-color);
+    padding: 20px 24px;
+}
 
-        margin-bottom: 4px;
-    }
+.preview-item-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primery-grey-color);
 
-    &-text {
-        font-size: 16px;
-        line-height: 1.9;
-        letter-spacing: 0.03em;
-        color: var(--primery-text-color);
-    }
+    margin-bottom: 4px;
+}
+
+.preview-item-text {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
 }

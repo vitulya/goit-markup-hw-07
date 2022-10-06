@@ -35,8 +35,8 @@
     transform: translateY(-50%);
 
     transition: fill var(--transition-dur-and-fun);
+}
 
-    .modal-input:focus + & {
-            fill: var(--accent-color);
-        }
+.modal-input:focus + .modal-icon {
+    fill: var(--accent-color);
 }
