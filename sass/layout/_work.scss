@@ -1,21 +1,20 @@
 .work {
     padding-top: 47px;
     background-color: var(--primery-white-color);
-}
 
-.work__list {
+&__list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
 
-.work__item {
+&__item {
     position: relative;
 
     flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.work__item-title {
+&__item-title {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -30,3 +29,5 @@
 
     padding: 27px 0;
 }
+}
+
